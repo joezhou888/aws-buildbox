@@ -1,6 +1,6 @@
 FROM amazonlinux:2.0.20190228
 
-LABEL maintainer="James Ousby <jousby@gmail.com>"
+LABEL maintainer="Joe Zhou <joe.zhou@sydney.edu.au>"
 
 # The below is using Sdkman (http://sdkman.io) to manage the installation of jvm related build tools. 
 # The version numbers listed here are sdkman sdk version tags.  Unfortunately to get a list of valid tags to
@@ -19,7 +19,7 @@ ENV GRADLE_VERSION=5.3.1
 ENV MAVEN_VERSION=3.6.1
 ENV SBT_VERSION=1.2.8 
 ENV NODE_VERSION=10.15.3
-ENV CDK_VERSION=0.29.0
+ENV CDK_VERSION=0.34.0
 
 # Install required packages for python, aws-cli and sdkman
 RUN yum -y update \
