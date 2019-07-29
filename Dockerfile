@@ -1,4 +1,4 @@
-FROM amazonlinux:2.0.20190228
+FROM amazonlinux:2
 
 LABEL maintainer="Joe Zhou <joe.zhou@sydney.edu.au>"
 
@@ -13,13 +13,13 @@ ENV SDKMAN_DIR=/opt/sdkman
 # For stability / deterministic builds, fix the versions of tools being installed rather than just use 'latest'.
 ENV AWS_CLI_VERSION=1.16.140
 ENV AWS_SAM_CLI_VERSION=0.14.2
-ENV DOCKER_VERSION=18.06.1
-ENV JAVA_VERSION=8.0.212-amzn
+ENV DOCKER_VERSION=18.09.6
+ENV JAVA_VERSION=8.0.222-amzn
 ENV GRADLE_VERSION=5.3.1
 ENV MAVEN_VERSION=3.6.1
 ENV SBT_VERSION=1.2.8 
-ENV NODE_VERSION=10.15.3
-ENV CDK_VERSION=0.35.0
+ENV NODE_VERSION=10.16.0
+ENV CDK_VERSION=1.2.0
 
 # Install required packages for python, aws-cli and sdkman
 RUN yum -y update \
