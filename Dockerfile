@@ -13,7 +13,7 @@ ENV SDKMAN_DIR=/opt/sdkman
 # For stability / deterministic builds, fix the versions of tools being installed rather than just use 'latest'.
 ENV AWS_CLI_VERSION=1.16.140
 ENV AWS_SAM_CLI_VERSION=0.14.2
-ENV DOCKER_VERSION=18.09.6
+ENV DOCKER_VERSION=18.06.1
 ENV JAVA_VERSION=8.0.222-amzn
 ENV GRADLE_VERSION=5.3.1
 ENV MAVEN_VERSION=3.6.1
